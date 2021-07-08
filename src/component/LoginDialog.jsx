@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import image from './images/075';
 import { Dialog, DialogContent, TextField, Box, Button, makeStyles, Typography } from '@material-ui/core';
 import { authenticateLogin, authenticateSignup } from '../../service/api';
 
@@ -9,7 +10,7 @@ const useStyle = makeStyles({
         maxWidth: 'unset !important'
     },
     image: {
-        backgroundImage: `url(${'/images/0.75/Asset 4ldpi.png'})`,
+        backgroundImage: `url(${'image'})`,
         background: '#2874f0',
         backgroundPosition: 'center 85%',
         backgroundRepeat: 'no-repeat',
